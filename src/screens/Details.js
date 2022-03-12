@@ -1,6 +1,7 @@
 import React from "react";
 import { View, Text, StyleSheet, Image, Button, StatusBar } from "react-native";
 import { useNavigation } from "@react-navigation/native";
+import List from "../components/List";
 function Details() {
   const navigation = useNavigation();
   return (
@@ -8,6 +9,7 @@ function Details() {
       <StatusBar style="auto" />
       <Text style={styles.title}>Details</Text>
       {/* <Image style={styles.image} source={require("../src/assets/Group.png")} /> */}
+      <List />
       <Button
         title="Go to Home"
         onPress={() => {
@@ -15,6 +17,7 @@ function Details() {
           console.log("Go to LoggedOut");
         }}
       />
+      {/* <BottomTabBar /> */}
     </View>
   );
 }

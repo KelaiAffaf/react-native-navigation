@@ -12,6 +12,7 @@ const LoggedOut = () => {
       <View style={styles.footerContainer}>
         <Footer />
       </View>
+      {/* <BottomTabBar /> */}
     </View>
   );
 };

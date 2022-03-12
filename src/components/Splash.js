@@ -5,8 +5,8 @@ import { View, Text, Image, StyleSheet } from "react-native";
 const Splash = () => {
   return (
     <View style={styles.container}>
-      <Image source={require("../assets/bg.png")} style={styles.bg} />
-      <Image source={require("../assets/Group.png")} style={styles.photo} />
+      <Image source={require("../../assets/bg.png")} style={styles.bg} />
+      <Image source={require("../../assets/Group.png")} style={styles.photo} />
     </View>
   );
 };

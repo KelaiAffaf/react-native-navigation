@@ -17,7 +17,9 @@ const Footer = () => {
         }}
       />
       <Button
+        style={style.Btn1}
         title="details"
+        color="red"
         onPress={() => {
           navigation.navigate("Details");
           console.log("Sign Up");
@@ -38,7 +40,7 @@ const style = StyleSheet.create({
     flex: 1,
     flexDirection: "row",
     alignItems: "center",
-    justifyContent: "center",
+    justifyContent: "space-around",
   },
   Btn1: {
     alignItems: "center",
@@ -48,6 +50,7 @@ const style = StyleSheet.create({
     borderRadius: 4,
     elevation: 3,
     backgroundColor: "black",
+    marginLeft: 10,
   },
 });
 export default Footer;
