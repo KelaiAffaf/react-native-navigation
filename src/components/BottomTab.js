@@ -4,7 +4,7 @@ import HomeScreen from "../../src/screens/Home";
 import SettingsScreen from "../../src/screens/Seetings";
 import DetailsScreen from "../../src/screens/Details";
 import ScreenOne from "../navigations/ScreeOne";
-
+import LoggedOut from "../screens/LoggedOut";
 function MyTabs() {
   const Tab = createBottomTabNavigator();
   return (
@@ -17,7 +17,7 @@ function MyTabs() {
     >
       <Tab.Screen
         name="Home"
-        component={ScreenOne}
+        component={HomeScreen}
         options={{
           tabBarLabel: "Home",
           tabBarIcon: ({ color, size }) => (
@@ -70,6 +70,26 @@ function MyTabs() {
                 }}
               >
                 🔎
+              </Text>
+            </View>
+          ),
+        }}
+      />
+      <Tab.Screen
+        name="LoggedOut"
+        component={LoggedOut}
+        options={{
+          tabBarLabel: "LoggedOut",
+          tabBarIcon: ({ color, size }) => (
+            <View>
+              <Text
+                style={{
+                  fontSize: size,
+                  color: color,
+                  fontWeight: "bold",
+                }}
+              >
+                🔒
               </Text>
             </View>
           ),

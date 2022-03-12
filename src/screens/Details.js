@@ -7,16 +7,16 @@ function Details() {
   return (
     <View style={styles.container}>
       <StatusBar style="auto" />
-      <Text style={styles.title}>Details</Text>
+
       {/* <Image style={styles.image} source={require("../src/assets/Group.png")} /> */}
       <List />
-      <Button
+      {/* <Button
         title="Go to Home"
         onPress={() => {
           navigation.navigate("LoggedOut");
           console.log("Go to LoggedOut");
         }}
-      />
+      /> */}
       {/* <BottomTabBar /> */}
     </View>
   );
